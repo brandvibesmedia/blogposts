@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-8">
+        <article class="content" id="content">
+            <h1><strong>//Our</strong>Blog</h1>
+
+            <ul class="content-listing">
+                <li x-ng-repeat="post in blogPosts">
+                    <a ng-href="/blog">{{post.title}}</a>
+                </li>
+            </ul>
+
+        </article>
+    </div>
+    <aside class="col-sm-4 aside hidden-xs">
+        <img src="img/main-page-ch.jpg" class="img-responsive">
+    </aside>
+</div>

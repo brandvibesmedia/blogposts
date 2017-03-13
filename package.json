@@ -1,0 +1,29 @@
+{
+  "name": "jonasclub",
+  "version": "1.0.0",
+  "description": "Jonas Club Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nika Hurynovich",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-route": "^1.6.3",
+    "font-awesome": "^4.7.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "node-sass": "^4.5.0",
+    "normalize.css": "^5.0.0"
+  }
+}

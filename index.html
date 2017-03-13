@@ -1,0 +1,35 @@
+<!DOCTYPE html ng-ap>
+<html x-ng-app="jonas" x-ng-strict-di>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Jonas Club Software">
+    <meta name="author" content="Nika">
+
+    <title>Jonas Club Software</title>
+    <base href="/">
+    <link href="css/css.min.css" rel="stylesheet">
+</head>
+
+<body  x-ng-class="{'home': page === 'home', 'inner': page === 'inner'}" x-ng-controller="SiteCtrl">
+<div x-ng-include="'src/includes/header.html'"></div>
+
+<div class="hero-image" x-ng-class="{'hero-image-1': page === 'home', 'hero-image-2': page === 'inner'}">
+    <div class="hero-image-btn--scroll hidden-xs">
+        <a href="#content">Scroll Down <i class="fa fa-angle-down"></i></a>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container" id="content" x-ng-view></div>
+</div>
+
+<div x-ng-include="'src/includes/footer.html'"></div>
+
+
+<script src="js/jslib.js"></script>
+<script src="js/jsapp.js"></script>
+</body>
+</html>
