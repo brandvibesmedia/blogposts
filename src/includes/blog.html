@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-sm-8">
+        <article class="content" id="content">
+            <h1><strong>//Our</strong>Blog</h1>
+
+            <div class="blog-post">
+                <h3>{{currentPost.title}}</h3>
+                <p>{{currentPost.body}}</p>
+                <p class="blog-post--comments">
+                    Comments ({{blogComments.length}})
+                </p>
+
+                <div class="blog-post--comments-list" x-ng-repeat="comment in blogComments">
+                    <h6><a x-ng-href="mailto:{{comment.email}}">{{comment.name}}</a> wrote:</h6>
+                    <p>{{comment.body}}</p>
+                </div>
+            </div>
+
+        </article>
+    </div>
+    <aside class="col-sm-4 aside hidden-xs">
+        <img src="img/main-page-ch.jpg" class="img-responsive">
+    </aside>
+</div>
